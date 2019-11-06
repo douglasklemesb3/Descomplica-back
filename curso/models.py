@@ -12,7 +12,7 @@ class Curso(models.Model):
         ("ND", "Não Definido"),
     )
 
-    Periodo =(
+    Periodo = (
         ("---","---"),
         ("M","Manha"),
         ("T","Tarde"),
@@ -21,7 +21,7 @@ class Curso(models.Model):
 
     nome = models.CharField(max_length=255)
     rg = models.CharField(max_length=10)
-    idade = models.IntegerField()
+    idade = models.CharField( max_length=255)
     dataNascimento = models.CharField(max_length=255)
     cpf = models.CharField(max_length=12)
     sexo = models.CharField(choices=Genero, max_length=255)
