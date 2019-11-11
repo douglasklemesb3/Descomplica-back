@@ -20,10 +20,10 @@ class Curso(models.Model):
     )
 
     nome = models.CharField(max_length=255)
-    rg = models.CharField(max_length=10)
+    rg = models.CharField(max_length=255)
     idade = models.CharField( max_length=255)
     dataNascimento = models.CharField(max_length=255)
-    cpf = models.CharField(max_length=12)
+    cpf = models.CharField(max_length=255)
     sexo = models.CharField(choices=Genero, max_length=255)
     email = models.EmailField(max_length=255)
     telefone = models.CharField(max_length=255)
