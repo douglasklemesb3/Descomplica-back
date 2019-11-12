@@ -7,5 +7,4 @@ class EntretenimentoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Entretenimento
         fields = ['id', 'nome', 'idade', 'rg', 'cpf',
-                  'dataNascimento', 'sexo', 'email', 'telefone', 'bairro', 'endereco', 'numero_de_recidencia',
-                  'periodo']
+                'sexo', 'email', 'telefone', 'endereco']
