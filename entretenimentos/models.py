@@ -9,7 +9,12 @@ class Entretenimento(models.Model):
         ("F", "Feminino"),
         ("ND", "Não Definido"),
     )
-
+    Periodo = (
+        ("---","---"),
+        ("M","Manhã"),
+        ("T","Tarde"),
+        ("N","noite"),
+    )
     
 
     nome = models.CharField(max_length=255)
@@ -20,5 +25,5 @@ class Entretenimento(models.Model):
     email = models.EmailField(max_length=255)
     telefone = models.CharField(max_length=255)
     endereco = models.CharField(max_length=255)
-
+    periodo = models.CharField(choices=Periodo, max_length=255)
 
